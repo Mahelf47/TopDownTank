@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dqb67t81ukr01"]
+
+[ext_resource type="PackedScene" uid="uid://dhd2onputlvi1" path="res://gun.tscn" id="1_c312q"]
+
+[node name="Node2D" type="Node2D" unique_id=1744036713]
+
+[node name="Gun" parent="." unique_id=1268871069 instance=ExtResource("1_c312q")]
+
+[node name="Camera2D" type="Camera2D" parent="Gun" unique_id=168957306]
