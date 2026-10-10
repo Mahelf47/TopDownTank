@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dy0g5rtohnisx"]
+
+[ext_resource type="Texture2D" uid="uid://55bxcm5b2a7v" path="res://Assets/Retina/tankBody_blue.png" id="1_7gk0n"]
+[ext_resource type="Script" uid="uid://81nejdgktm0c" path="res://BaseTank/base_tank.gd" id="1_k2n2i"]
+[ext_resource type="Texture2D" uid="uid://c6d81t32g4b3s" path="res://Assets/Retina/tankBlue_barrel2.png" id="3_4eftg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mksb3"]
+size = Vector2(76, 76)
+
+[node name="BaseTank" type="CharacterBody2D" unique_id=1887819350]
+script = ExtResource("1_k2n2i")
+speed = 15000.0
+rotation_speed_rad = 1.35
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=184774567]
+shape = SubResource("RectangleShape2D_mksb3")
+
+[node name="BodySprite" type="Node2D" parent="." unique_id=790287444]
+
+[node name="Sprite2D" type="Sprite2D" parent="BodySprite" unique_id=1615631873]
+rotation = -1.5707964
+texture = ExtResource("1_7gk0n")
+
+[node name="Muzzle" type="Sprite2D" parent="." unique_id=660283362]
+position = Vector2(27, 0)
+rotation = -1.5707964
+texture = ExtResource("3_4eftg")
