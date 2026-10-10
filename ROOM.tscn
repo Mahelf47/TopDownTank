@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://d58lllo8i04t"]
-
-[node name="Node2D" type="Node2D" unique_id=759475973]
-
-[node name="ROOMROOM" type="Node2D" parent="." unique_id=1737413730]
