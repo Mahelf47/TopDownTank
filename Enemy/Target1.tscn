@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cuavapve78gi3"]
 
 [ext_resource type="Texture2D" uid="uid://f6b0o7xc2028" path="res://icon.svg" id="1_f4rhf"]
-[ext_resource type="Script" uid="uid://dl13bkgjjd68k" path="res://BaseBulletAndBarrel/target_1.gd" id="1_ffkav"]
+[ext_resource type="Script" uid="uid://dl13bkgjjd68k" path="res://Enemy/target_1.gd" id="1_ffkav"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gp1di"]
 
