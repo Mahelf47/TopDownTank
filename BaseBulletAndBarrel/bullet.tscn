@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bfa05bcg8okek"]
+
+[ext_resource type="Script" uid="uid://i37t7f5w5x71" path="res://BaseBulletAndBarrel/bullet.gd" id="1_v8qja"]
+[ext_resource type="Texture2D" uid="uid://bq8ko01plcs1r" path="res://Assets/Retina/bulletBlue1.png" id="2_tm4c2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gp1di"]
+size = Vector2(8, 20)
+
+[node name="Bullet" type="CharacterBody2D" unique_id=871150406]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_v8qja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1519357]
+shape = SubResource("RectangleShape2D_gp1di")
+
+[node name="BulletBlue1" type="Sprite2D" parent="." unique_id=1767080063]
+texture = ExtResource("2_tm4c2")
