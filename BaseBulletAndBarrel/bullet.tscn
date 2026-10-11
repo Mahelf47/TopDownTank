@@ -12,7 +12,9 @@ collision_mask = 2
 script = ExtResource("1_v8qja")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1519357]
+rotation = 1.5707964
 shape = SubResource("RectangleShape2D_gp1di")
 
 [node name="BulletBlue1" type="Sprite2D" parent="." unique_id=1767080063]
+rotation = 1.5707964
 texture = ExtResource("2_tm4c2")

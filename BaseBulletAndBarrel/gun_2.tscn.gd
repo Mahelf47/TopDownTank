@@ -15,7 +15,11 @@ func _physics_process(delta):
 
 func fire():
 	var bullet = bullet_path.instantiate()
-	bullet.dir = Vector2.RIGHT.rotated(pivot.rotation - (PI / 2))
-	bullet.pos = $EndOfGun2.global_position
-	bullet.rota = pivot.global_rotation
+	var muzzle_pos = $EndOfGun2.global_position
+	var dir_vector = (muzzle_pos - pivot.global_position).normalized()
+	
+	bullet.dir = dir_vector
+	bullet.pos = muzzle_pos
+	bullet.rota = dir_vector.angle()
+	
 	get_tree().current_scene.add_child(bullet)
