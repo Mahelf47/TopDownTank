@@ -6,3 +6,5 @@ func _ready():
 func _on_body_entered(body):
 	queue_free()
 	body.queue_free()
+	
+#hello trying again
