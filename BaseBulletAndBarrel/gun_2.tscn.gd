@@ -8,7 +8,7 @@ func _physics_process(delta):
 	var mouse_pos = get_global_mouse_position()
 	
 	var target_angle = pivot.global_position.angle_to_point(mouse_pos) + (PI / 2)
-	pivot.rotation = lerp_angle(pivot.rotation, target_angle, rotation_speed * delta)
+	pivot.global_rotation = lerp_angle(pivot.global_rotation, target_angle, rotation_speed * delta)
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		fire()
