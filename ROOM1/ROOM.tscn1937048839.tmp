@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dqb67t81ukr01"]
+
+[ext_resource type="Script" uid="uid://b7pr3i2wobd2s" path="res://ROOM1/room.gd" id="1_cp301"]
+[ext_resource type="PackedScene" uid="uid://dhd2onputlvi1" path="res://BaseBulletAndBarrel/gun.tscn" id="2_xib3o"]
+
+[node name="Node2D" type="Node2D" unique_id=1744036713]
+script = ExtResource("1_cp301")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=168957306]
+position = Vector2(577, 323)
+
+[node name="Gun" parent="." unique_id=1268871069 instance=ExtResource("2_xib3o")]
+position = Vector2(579, 326)
