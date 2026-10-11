@@ -7,11 +7,11 @@
 [node name="Node2D" type="Node2D" unique_id=1744036713]
 script = ExtResource("1_cp301")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=168957306]
-position = Vector2(577, 323)
-
 [node name="BaseTank" parent="." unique_id=1887819350 instance=ExtResource("2_fut7n")]
 position = Vector2(584, 335)
 
 [node name="Gun2" parent="BaseTank" unique_id=1813234160 instance=ExtResource("3_xib3o")]
 position = Vector2(0, -1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=168957306]
+position = Vector2(577, 323)
