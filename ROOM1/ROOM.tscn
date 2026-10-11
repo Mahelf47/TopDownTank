@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b7pr3i2wobd2s" path="res://ROOM1/room.gd" id="1_cp301"]
 [ext_resource type="PackedScene" uid="uid://dy0g5rtohnisx" path="res://BaseTank/base_tank.tscn" id="2_fut7n"]
 [ext_resource type="PackedScene" uid="uid://fjcftyrecmbh" path="res://BaseBulletAndBarrel/gun_2.tscn" id="3_xib3o"]
+[ext_resource type="PackedScene" uid="uid://cuavapve78gi3" path="res://BaseBulletAndBarrel/Target1.tscn" id="4_fut7n"]
 
 [node name="Node2D" type="Node2D" unique_id=1744036713]
 script = ExtResource("1_cp301")
@@ -15,3 +16,18 @@ position = Vector2(0, -1)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=168957306]
 position = Vector2(577, 323)
+
+[node name="Area2D" parent="." unique_id=44394310 instance=ExtResource("4_fut7n")]
+position = Vector2(944, 122)
+
+[node name="Area2D2" parent="." unique_id=227195389 instance=ExtResource("4_fut7n")]
+position = Vector2(304, 157)
+
+[node name="Area2D3" parent="." unique_id=1350665196 instance=ExtResource("4_fut7n")]
+position = Vector2(735, 500)
+
+[node name="Area2D4" parent="." unique_id=401595757 instance=ExtResource("4_fut7n")]
+position = Vector2(935, 329)
+
+[node name="Area2D5" parent="." unique_id=816467399 instance=ExtResource("4_fut7n")]
+position = Vector2(709, 103)
