@@ -9,6 +9,7 @@ size = Vector2(16, 52)
 [node name="Gun2" type="Node2D" unique_id=1813234160]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=415289794]
+rotation = 1.5707964
 script = ExtResource("1_anc7e")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=344853818]
