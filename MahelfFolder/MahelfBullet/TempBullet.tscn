@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cmqufmgitq3h7"]
+
+[ext_resource type="Script" uid="uid://ds2pmw2rlngi2" path="res://MahelfFolder/MahelfBullet/temp_bullet.gd" id="1_hdrnw"]
+[ext_resource type="Texture2D" uid="uid://bq8ko01plcs1r" path="res://Assets/Retina/bulletBlue1.png" id="1_rbf5b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mksb3"]
+size = Vector2(20, 8)
+
+[node name="TempBullet" type="Area2D" unique_id=523091924]
+script = ExtResource("1_hdrnw")
+speed = 1200.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=380215247]
+rotation = 1.5707964
+texture = ExtResource("1_rbf5b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1425393890]
+shape = SubResource("RectangleShape2D_mksb3")
+
+[node name="FreeingTimer" type="Timer" parent="." unique_id=1517337808]
+process_callback = 0
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="FreeingTimer" to="." method="_on_freeing_timer_timeout"]

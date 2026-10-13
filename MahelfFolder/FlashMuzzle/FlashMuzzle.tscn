@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://c61cpsyvmg7rj"]
+
+[ext_resource type="Texture2D" uid="uid://bxvetwjgasxg2" path="res://Assets/Retina/shotLarge.png" id="1_ge465"]
+[ext_resource type="Script" uid="uid://cqipeuiqic6og" path="res://MahelfFolder/FlashMuzzle/flash_muzzle.gd" id="2_12j5u"]
+
+[sub_resource type="Animation" id="Animation_ge465"]
+resource_name = "Fire"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.2, 0.2)]
+}
+
+[sub_resource type="Animation" id="Animation_12j5u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5v7ed"]
+_data = {
+&"Fire": SubResource("Animation_ge465"),
+&"RESET": SubResource("Animation_12j5u")
+}
+
+[node name="FlashMuzzle" type="Sprite2D" unique_id=219341953]
+visible = false
+texture = ExtResource("1_ge465")
+offset = Vector2(0, 25)
+script = ExtResource("2_12j5u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2071443746]
+libraries/ = SubResource("AnimationLibrary_5v7ed")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dy575122uab3h"]
+
+[ext_resource type="PackedScene" uid="uid://tm0f2681jk2f" path="res://MahelfFolder/Tanks/mahelf_tank.tscn" id="1_rg5yy"]
+
+[node name="0Room" type="Node2D" unique_id=1051036369]
+
+[node name="BaseTank" parent="." unique_id=1887819350 instance=ExtResource("1_rg5yy")]
+position = Vector2(520, 225)
